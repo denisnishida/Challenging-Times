@@ -1,0 +1,9 @@
+<p>
+  Character:
+  <% if display_link %>
+    <%= link_to character.name, view_character_path(character) %>
+  <% else %>
+    <%= character.name %>
+  <% end %>
+</p>
+<p>Location: <%= character.location %></p>
